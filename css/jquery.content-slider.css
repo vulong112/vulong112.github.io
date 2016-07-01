@@ -1,0 +1,86 @@
+
+
+.thim-content-slider{
+	position: relative;
+
+}
+.thim-content-slider .slides-wrapper{
+	position: relative;
+	overflow: hidden;
+	height: 420px;
+	top:56px;
+}
+.thim-content-slider .scrollable{
+	list-style: none;
+	margin: -10px 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	height: 340px !important;
+}
+.thim-content-slider .scrollable > li{
+	position: absolute;
+	top: 0;
+
+}
+.thim-content-slider .scrollable > li .slide-content{
+	margin: 10px;
+	_border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.thim-content-slider .scrollable > li img{
+	max-width: 100%;
+	height: auto;
+	line-height: 1;
+	border-radius: 15px;
+}
+.thim-content-slider .scrollable > li img::before{
+	content: 'dsfasdf';
+	font-size: 10px;
+	color: #0f0f0f;
+}
+
+.thim-content-slider .slides-nav{
+
+}
+.thim-content-slider .control-nav{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #FF0000;
+	position: absolute;
+	display: none;
+	top: 50%;
+	z-index: 15;
+}
+.thim-content-slider .control-nav.next{
+	right: 0;
+}
+.thim-content-slider:hover .slides-nav{
+
+}
+.thim-content-slider .mid-item{
+	z-index: 15;
+}
+.thim-content-slider .slides-nav .control-nav{
+}
+.thim-content-slider:hover .control-nav{
+	display: block;
+}
+.thim-content-slider .slides-content > div{
+	float: left;
+	width: 100%;
+	margin-right: -100%;
+	text-align: center;
+	margin-top: 30px;
+	opacity: 0;
+}
+.thim-content-slider .slides-content:after{
+	display: block;
+	content: '';
+	clear: both;
+}
